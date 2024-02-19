@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transport Management System</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link  rel="stylesheet" href="style.css"
+    <title>Transport Management System</title>
 </head>
-<body class="bg-gray-100">
-
-<!-- Navigation -->
-<nav class="bg-blue-800 p-4 shadow-lg">
-  <div class="container mx-auto flex justify-between items-center">
-    <div class="text-white font-bold text-lg">
-      Transport Management System
-    </div>
-    <div class="space-x-4">
-      <a href="home.js" class="text-blue-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-      <a href="Login.js" class="text-blue-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Login</a>
-      <a href="#" class="text-blue-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
-      <a href="#" class="bg-purple-500 hover:bg-purple-600 text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<section class="container mx-auto my-12 p-8 bg-white shadow-lg rounded-lg">
-  <h1 class="text-4xl font-bold text-gray-800 mb-3">Welcome to Our Transport Management System</h1>
-  <p class="text-lg text-gray-600">Efficient, Reliable, and User-friendly</p>
-  <p class="mt-4 text-gray-600">
-    Our Transport Management System (TMS) is designed to streamline your logistics operations,
-    offering real-time tracking, cost reduction, and enhanced efficiency.
-  </p>
-</section>
-
-<!-- Features Section -->
-<section class="container mx-auto my-12 p-8">
-  <h2 class="text-3xl font-bold text-gray-800 mb-6">Features</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Feature 1 -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h3 class="text-xl font-semibold mb-2">Real-time Tracking</h3>
-      <p class="text-gray-600">Track your shipments in real time and get detailed visibility of your goods.</p>
-    </div>
-    <!-- Feature 2 -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h3 class="text-xl font-semibold mb-2">Cost Reduction</h3>
-      <p class="text-gray-600">Optimize your expenses with our efficient route planning and load optimization.</p>
-    </div>
-    <!-- Feature 3 -->
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h3 class="text-xl font-semibold mb-2">Enhanced Efficiency</h3>
-      <p class="text-gray-600">Improve your operational efficiency with our integrated TMS solution.</p>
-    </div>
-  </div>
-</section>
-
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Transport Management System</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#" role="button">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to Our Transport Management System</h2>
+                    <h3>Efficient, Reliable, and User-friendly</h3>
+                </hgroup>
+                <p>Our Transport Management System (TMS) is designed to streamline your logistics operations, offering real-time tracking, cost reduction, and enhanced efficiency.</p>
+                <figure>
+                    <img src="front page.webp" alt="Transport Management System">
+                    <figcaption><a  target="_blank">Our Dream</a></figcaption>
+                </figure>
+                <h3>Features</h3>
+                <p>From real-time tracking to analytics and reporting, discover how our TMS can transform your business.</p>
+                <h3>About Us</h3>
+                <p>Learn more about our mission to deliver high-quality transport management solutions.</p>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Get In Touch</h2>
+                    <h3>Contact us or request a demo</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                    <button type="submit" onclick="event.preventDefault()">Submit</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a>   <a href="#">Terms of Use</a>
+        </small>
+    </footer>
 </body>
 </html>

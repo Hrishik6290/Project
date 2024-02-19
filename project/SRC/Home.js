@@ -1,6 +1,5 @@
 import React from 'react';
-import './Home.html'; // Assuming you have a Home.css file for TailwindCSS styles
-
+<link  rel="stylesheet" href="style.css"
 const Home = () => {
   return (
     <div className="container mx-auto">

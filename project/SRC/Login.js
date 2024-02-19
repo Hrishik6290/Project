@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import './Login.html'; // Make sure to create a corresponding Login.css file for any additional styling
-
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
