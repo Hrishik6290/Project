@@ -1,25 +1,29 @@
 import React from 'react';
-import './Features.css'; 
+import './Features.css'; // Make sure to create a corresponding Features.css file
+
 const Features = () => {
   return (
     <div className="features-container">
-      <div className="feature">
-        <h2 className="feature-title">Real-time Tracking</h2>
-        <p className="feature-description">
-          Get up-to-the-minute updates on your shipments, allowing for better logistics planning and customer service.
-        </p>
+      <div className="feature-card">
+        <div className="icon-wrapper">
+          <i className="fas fa-truck-moving"></i> {/* Replace with actual icons */}
+        </div>
+        <h3>Real-time Tracking</h3>
+        <p>Monitor your shipments every step of the way with our GPS-enabled tracking system.</p>
       </div>
-      <div className="feature">
-        <h2 className="feature-title">Cost Reduction</h2>
-        <p className="feature-description">
-          Our system helps identify cost-saving opportunities by optimizing routes and reducing operational overhead.
-        </p>
+      <div className="feature-card">
+        <div className="icon-wrapper">
+          <i className="fas fa-dollar-sign"></i> {/* Replace with actual icons */}
+        </div>
+        <h3>Cost Reduction</h3>
+        <p>Optimize your spending with our intelligent route planning and load optimization features.</p>
       </div>
-      <div className="feature">
-        <h2 className="feature-title">Enhanced Efficiency</h2>
-        <p className="feature-description">
-          Streamline your processes with our comprehensive dashboard that provides insights into every aspect of your logistics.
-        </p>
+      <div className="feature-card">
+        <div className="icon-wrapper">
+          <i className="fas fa-chart-line"></i> {/* Replace with actual icons */}
+        </div>
+        <h3>Enhanced Efficiency</h3>
+        <p>Improve your operational efficiency with our end-to-end supply chain management solutions.</p>
       </div>
     </div>
   );
