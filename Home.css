@@ -4,8 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body, html {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; 
   width: 100%;
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -20,8 +22,8 @@ body, html {
 
 /* Style the navbar */
 .navbar {
-  background: #023e8a; /* Adjust the color to match your design */
-  padding: 1rem;
+  background: #389bc5; /* Adjust the color to match your design */
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +31,7 @@ body, html {
 }
 
 .nav-link {
-  color: white;
+  color: rgb(36, 72, 233);
   text-decoration: none;
   margin: 0 10px;
   padding: 5px 10px;
@@ -50,11 +52,12 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #90e0ef;
+  color: #490790;
   text-align: center;
-  padding: 20px;
   width: 100vw; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
+  height: calc(100vh - 4rem);
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -91,10 +94,10 @@ body, html {
 }
 
 .feature-card h3 {
-  color: white;
+  color: rgb(57, 32, 197);
   margin-bottom: 10px;
 }
 
 .feature-card p {
-  color: #ade8f4; /* Soft blue for the paragraph */
+  color: #4626e6; /* Soft blue for the paragraph */
 }
