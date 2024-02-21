@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
-// ... other component code
-
-<Link to="/">Home</Link>
-
-import './Login.css'; // This imports the CSS from Login.css
+import { Link } from 'react-router-dom'; // Ensure Link is used if you have navigation within the component.
+import './Login.css'; // Correctly imports the CSS for styling.
 
 const Login = () => {
+  // Initialize state for credentials.
   const [credentials, setCredentials] = useState({ username: '', password: '' });
 
+  // Update state based on form input changes.
   const handleChange = (e) => {
     const { name, value } = e.target;
     setCredentials(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: value // Dynamically set either username or password based on input name.
     }));
   };
 
+  // Handle form submission.
   const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle login logic here
-    console.log('Login credentials:', credentials);
+    event.preventDefault(); // Prevent default form submission behavior.
+    console.log('Login credentials:', credentials); // Placeholder for actual login logic.
+
+    // Here you would typically send credentials to your server for validation
+    // and handle the response accordingly.
   };
 
   return (
@@ -53,6 +53,8 @@ const Login = () => {
 
           <button type="submit" className="login-button">Sign In</button>
         </form>
+        {/* Example of using Link for navigation to a home page. */}
+        <Link to="/" className="back-home-link">Back to Home</Link>
       </div>
     </div>
   );
